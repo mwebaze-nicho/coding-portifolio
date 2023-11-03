@@ -1,0 +1,115 @@
+body {
+  background-color: #0a192f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* CSS styling for the clock */
+.clock {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #64ffda; /* Set clock border color to match the page background */
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hour-hand, .minute-hand, .second-hand {
+  background-color: #64ffda; /* Set clock hands color to match the page background */
+  position: absolute;
+  transform-origin: bottom center;
+  left: calc(50% - 1px);
+}
+
+.hour-hand {
+  width: 4px;
+  height: 50px;
+  top: calc(50% - 50px);
+}
+
+.minute-hand {
+  width: 3px;
+  height: 70px;
+  top: calc(50% - 70px);
+}
+
+.second-hand {
+  width: 2px;
+  height: 80px;
+  top: calc(50% - 80px);
+}
+
+/* CSS styling for the clock numbers */
+/* CSS styling for the clock numbers */
+.number {
+  color: #64ffda;
+  font-size: 16px;
+  position: absolute;
+  transform-origin: center center;
+}
+
+/* Positioning each number on the clock */
+.number.one {
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.number.two {
+  top: 30px;
+  left: calc(50% + 70px);
+}
+
+.number.three {
+  top: calc(50% - 8px);
+  left: calc(50% + 90px);
+}
+
+.number.four {
+  top: calc(50% + 70px);
+  left: calc(50% + 70px);
+}
+
+.number.five {
+  top: calc(50% + 90px);
+  left: calc(50% + 10px);
+}
+
+.number.six {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.number.seven {
+  top: calc(50% + 90px);
+  left: calc(50% - 90px);
+}
+
+.number.eight {
+  top: calc(50% + 70px);
+  left: calc(50% - 70px);
+}
+
+.number.nine {
+  top: calc(50% - 8px);
+  left: calc(50% - 90px);
+}
+
+.number.ten {
+  top: 30px;
+  left: calc(50% - 70px);
+}
+
+.number.eleven {
+  top: 10px;
+  left: calc(50% - 70px);
+}
+
+.number.twelve {
+  top: calc(50% - 30px);
+  left: 50%;
+  transform: translateX(-50%);
+}

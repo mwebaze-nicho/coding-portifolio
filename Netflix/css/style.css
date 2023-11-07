@@ -529,6 +529,10 @@ footer{
     #botoes button {
         margin-bottom: 15px;
     }
+
+    .img-hide{
+        display: none;
+    }
 }
 
 @media (max-width: 500px){
